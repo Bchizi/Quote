@@ -8,14 +8,19 @@ import { Quote } from '../quotes';
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
-   
+
   quotes: Quote[] = [
-    { id: 1,name: 'Username. ', author: 'Authors name inaekwa apa.', quote: 'The is the inspirational quote.' },
-    { id: 2,name: 'Username. ', author: 'Authors name inaekwa apa.', quote: 'The is the inspirational quote.' },
-    { id: 3,name: 'Username. ', author: 'Authors name inaekwa apa.', quote: 'The is the inspirational quote.' },
-    { id: 4,name: 'Username. ', author: 'Authors name inaekwa apa.', quote: 'The is the inspirational quote.' },
-    { id: 5,name: 'Username. ', author: 'Authors name inaekwa apa.', quote: 'The is the inspirational quote.' }
+    new Quote(1, 'Username. ', 'Authors name inaekwa apa.', 'The is the inspirational quote.'),
+    new Quote(2, 'Username. ', 'Authors name inaekwa apa.', 'The is the inspirational quote.'),
+    new Quote(3, 'Username. ', 'Authors name inaekwa apa.', 'The is the inspirational quote.'),
+    new Quote(4, 'Username. ', 'Authors name inaekwa apa.', 'The is the inspirational quote.'),
+    new Quote(5, 'Username. ', 'Authors name inaekwa apa.', 'The is the inspirational quote.')
   ]
+
+  
+  toggleQuote(index){
+    this.quotes[index].showQuote=!this.quotes[index].showQuote;
+  }
   constructor() { }
 
   ngOnInit() {
