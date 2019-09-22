@@ -21,6 +21,12 @@ export class QuoteComponent implements OnInit {
   toggleQuote(index){
     this.quotes[index].showQuote=!this.quotes[index].showQuote;
   }
+
+  removeQuote(removeIt,index){
+    if (removeIt){
+      this.quotes.splice(index,1)
+    }
+  }
   constructor() { }
 
   ngOnInit() {
