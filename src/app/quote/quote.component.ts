@@ -9,13 +9,12 @@ import { Quote } from '../quotes';
 })
 export class QuoteComponent implements OnInit {
 
-  quotes: Quote[] = [
-    new Quote(1, 'Username. ', 'Authors name inaekwa apa.', 'The is the inspirational quote.'),
-    new Quote(2, 'Username. ', 'Authors name inaekwa apa.', 'The is the inspirational quote.'),
-    new Quote(3, 'Username. ', 'Authors name inaekwa apa.', 'The is the inspirational quote.'),
-    new Quote(4, 'Username. ', 'Authors name inaekwa apa.', 'The is the inspirational quote.'),
-    new Quote(5, 'Username. ', 'Authors name inaekwa apa.', 'The is the inspirational quote.')
-  ]
+  quotes: Quote[]=[
+    new Quote(1,'Simplicity is the ultimate sophistication','Frankline Baraka',new Date(2019,1,19)),
+    new Quote(2,'If you judge people, you have no time to love them','Mother Theresa',new Date(2019,1,19)),
+    new Quote(3,'A great man is always willing to be little','Ralph Waldo Emerson',new Date(2019,1,19)),
+    new Quote(4,'The greatest wealth is to live content with little','Plato',new Date(2019,8,18)),
+  ];
 
   
   toggleQuote(index){

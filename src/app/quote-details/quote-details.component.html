@@ -1,4 +1,5 @@
 <p>
     {{quote.quote}}
 </p>
-<button (click)= 'deleteQuote(true)'>Delete</button>
+<p>Added <strong>{{quote.creationDate|dateCount}}</strong> ago</p>
+<button (click)= 'deleteQuote(true)'>delete</button>
