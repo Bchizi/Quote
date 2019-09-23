@@ -10,8 +10,8 @@ import { Quote } from '../quotes';
 export class QuoteComponent implements OnInit {
 
   quotes: Quote[]=[
-    new Quote(1,'Simplicity is the ultimate sophistication','Frankline Baraka',new Date(2019,1,19)),
-    new Quote(2,'If you judge people, you have no time to love them','Mother Theresa',new Date(2019,1,19)),
+    new Quote(1,'The sea, once it casts its spell, holds one in its net of wonder forever.','Jacques Yves Cousteau',new Date(2019,1,19)),
+    new Quote(2,'Because there’s nothing more beautiful than the way the ocean refuses to stop kissing the shoreline, no matter how many times it’s sent away.','Mother Theresa',new Date(2019,1,19)),
     new Quote(3,'A great man is always willing to be little','Ralph Waldo Emerson',new Date(2019,1,19)),
     new Quote(4,'The greatest wealth is to live content with little','Plato',new Date(2019,8,18)),
   ];
