@@ -1,5 +1,5 @@
-<p>
-    {{quote.author}}
-</p>
+<p>{{quote.author}}</p>
 <p>Added <strong>{{quote.creationDate|dateCount}}</strong> ago</p>
-<button (click)= 'deleteQuote(true)'>delete</button>
+<p class="btn btn-primary" id="upvote" (click)='addUpVote()'>like {{quote.upVote}}</p>
+<p id='downvote' (click)='addDownVote()' class='btn btn-primary'>dislike {{quote.downVote}}</p>
+<button class="btn btn-danger" (click)='deleteQuote(true)'>Delete Quote</button>

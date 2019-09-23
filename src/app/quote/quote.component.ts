@@ -24,11 +24,16 @@ export class QuoteComponent implements OnInit {
   removeQuote(removeIt,index){
     if (removeIt) {
       let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].name}?`)
-
     if (toDelete){
       this.quotes.splice(index,1)
     }
   }
+}
+addNewQuote(quote){
+  let quoteLength = this.quotes.length;
+  quote.id = quoteLength+1;
+  quote.creationDate = new Date(quote.creationDate)
+  this.quotes.push(quote)
 }
   constructor() { }
 
