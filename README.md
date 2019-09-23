@@ -4,14 +4,13 @@ A web app for viewing, adding and reviewing quotes. This project was generated w
 
 ## Author
 
-Anthony Leon Bichanga
+Anthony Leon Bichanga Nyakundi
 
 ## Project's Screenshot
-![](screenshot.png)
+![](src/assets/screenshot.png)
 
 ## Live link
-
-
+The live link to this project can be [found here](https://bchizi.github.io/Quote/)
 
 ## Development server
 
@@ -41,7 +40,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 MIT License
 
-Copyright (c) 2019 Frankline Baraka Mulama
+Copyright (c) 2019 Leon Bichanga
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
